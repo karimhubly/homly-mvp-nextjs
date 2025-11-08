@@ -1,10 +1,11 @@
 'use client';
 
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import { dummyProperties } from '../../../lib/data';
 
 export default function PropertyDetails() {
   const params = useParams();
+  const router = useRouter();
   const id = params?.id as string;
   const property = dummyProperties.find((p) => p.id === Number(id));
 
@@ -28,7 +29,7 @@ export default function PropertyDetails() {
       <p className="mb-4">{property.description}</p>
       <button
         className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
-        onClick={() => history.back()}
+        onClick={() => router.back()}
       >
         Back
       </button>
