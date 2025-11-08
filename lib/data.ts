@@ -16,7 +16,7 @@ export const dummyProperties: Property[] = [
     location: 'Downtown Dubai',
     price: 5000,
     bedrooms: 1,
-    images: ['/images/studio.png'],
+    images: ['https://placehold.co/600x400.png?text=Studio'],
     description:
       'A stylish studio with modern amenities close to Dubai Mall.',
   },
@@ -26,7 +26,7 @@ export const dummyProperties: Property[] = [
     location: 'Palm Jumeirah',
     price: 25000,
     bedrooms: 4,
-    images: ['/images/villa.png'],
+    images: ['https://placehold.co/600x400.png?text=Villa'],
     description:
       'Luxury villa with private pool and garden in Palm Jumeirah.',
   },
@@ -36,7 +36,7 @@ export const dummyProperties: Property[] = [
     location: 'JLT',
     price: 8000,
     bedrooms: 2,
-    images: ['/images/apartment.png'],
+    images: ['https://placehold.co/600x400.png?text=Apartment'],
     description:
       'Conveniently located apartment within walking distance to the Metro.',
   },
